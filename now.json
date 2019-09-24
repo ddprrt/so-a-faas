@@ -1,0 +1,22 @@
+{
+  "name": "dt-demo-widget",
+  "version": 2,
+  "builds": [
+    {
+      "src": "rust/rust.rs",
+      "use": "@now/rust"
+    },
+    {
+      "src": "index.html",
+      "use": "@now/static"
+    },
+    {
+      "src": "src/*.*",
+      "use": "@now/static"
+    },
+    {
+      "src": "api/*.js",
+      "use": "@now/node"
+    }
+  ]
+}
